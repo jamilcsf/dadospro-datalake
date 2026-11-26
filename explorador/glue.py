@@ -20,7 +20,7 @@ from pathlib import Path
 from explorador.particoes import CAMPOS, SEM_PARTICAO, Dataset, Objeto, banco_e_tabela, tabela_particoes
 
 ORDEM_CAMADAS = ["landing", "bronze", "silver", "gold"]
-IGNORADOS = {"comum.py", "__init__.py"}
+IGNORADOS = {"comum.py", "__init__.py", "executar_pipeline.py"}
 EM_EXECUCAO, SUCESSO, FALHOU = "Em execução", "Sucesso", "Falhou"
 HISTORICO = 30                                      # execuções guardadas por job; as mais antigas saem
 

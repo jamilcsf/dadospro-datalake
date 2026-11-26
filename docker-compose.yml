@@ -2,7 +2,7 @@
 # Variáveis do S3 (Floci) usadas pelo app e pelo explorador.
 x-ambiente-s3: &ambiente-s3
   AWS_ENDPOINT_URL: http://floci:4566
-  AWS_S3_BUCKET: datalake-tracking
+  AWS_S3_BUCKET: ${AWS_S3_BUCKET:-datalake-tracking-integrado}
   AWS_ACCESS_KEY_ID: test
   AWS_SECRET_ACCESS_KEY: test
   AWS_DEFAULT_REGION: us-east-1

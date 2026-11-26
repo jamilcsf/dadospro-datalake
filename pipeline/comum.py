@@ -121,7 +121,7 @@ def camada_existe(spark, camada: str) -> bool:
 def exigir_camada(spark, camada: str, comando: str) -> None:
     """Para o job com uma mensagem clara se a camada anterior não existe (requisito R2).
 
-        exigir_camada(spark, glob_eventos("bronze"), "python pipeline/bronze.py")
+        exigir_camada(spark, glob_eventos("bronze"), "python pipeline/01_bronze_ingestao.py")
     """
     if not camada_existe(spark, camada):
         spark.stop()
